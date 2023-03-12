@@ -115,6 +115,7 @@ export default class App {
     window.addEventListener('resize', this.resize.bind(this))
   }
   initHtml() {
+    return
     let linkInfo = document.querySelector('a.credit__linkInfo')
     if (linkInfo) {
       linkInfo.addEventListener('click', async (e) => {
