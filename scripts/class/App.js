@@ -95,7 +95,7 @@ export default class App {
     this.tweakPane = getTweakPane(this)
     this.tweakPane.containerElem_.style.opacity = this.debug ? 1 : 0
     const legend = document.createElement('legend')
-    legend.innerHTML = 'play with tweaks?'
+    //legend.innerHTML = 'play with tweaks?'
     this.tweakPane.containerElem_.append(legend)
     this.tweakPane.containerElem_.addEventListener(
       'mouseenter',
