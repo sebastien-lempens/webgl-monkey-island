@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monkey Island Tribute, a Webgl Experience - Sébastien Lempens</title>
+    <meta
+      name="description"
+      content="Monkey Island Tribute, a Webgl Experience - Sébastien Lempens"
+    />
+    <link rel="stylesheet" href="style.scss" />
+    <link
+      rel="preload"
+      href="./static/assets/images/MonkeyIslandTribute-MainTitle.png"
+      as="image"
+    />
+    <script>
+      // ;(function (w, d, s, l, i) {
+      //   w[l] = w[l] || []
+      //   w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+      //   var f = d.getElementsByTagName(s)[0],
+      //     j = d.createElement(s),
+      //     dl = l != 'dataLayer' ? '&l=' + l : ''
+      //   j.async = true
+      //   j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      //   f.parentNode.insertBefore(j, f)
+      // })(window, document, 'script', 'dataLayer', 'GTM-K3NNQSZ')
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K3NNQSZ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <main>
+      <h1>
+        <div>
+          <picture class="reveal-main-title">
+            <img
+              src="./static/assets/images/MonkeyIslandTribute-MainTitle.png"
+              width="1200"
+              height="508"
+              alt="Monkey Island Tribute - Sébastien Lempens"
+            />
+          </picture>
+          <picture class="reveal-main-title-shadow">
+            <img
+              src="./static/assets/images/MonkeyIslandTribute-MainTitle.png"
+              width="1200"
+              height="508"
+              alt="Monkey Island Tribute - Sébastien Lempens"
+            />
+          </picture>
+        </div>
+      </h1>
+      <canvas class="webgl"></canvas>
+      <legend class="credit">
+        <span>
+          2021, Monkey Island Tribute by
+          <a
+            href="http://lempens-design.com"
+            target="_blank"
+            title="Sébastien Lempens"
+            >Sébastien Lempens</a
+          >
+        </span>
+        <span>
+          <a href="javascript:void(0)" class="credit__linkInfo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="26px"
+              height="26px"
+            >
+              <path
+                fill-rule="evenodd"
+                fill="rgb(255, 255, 255)"
+                d="M12.592,0.12 C5.645,0.12 0.12,5.645 0.12,12.592 C0.12,19.539 5.645,25.172 12.592,25.172 C19.539,25.172 25.172,19.539 25.172,12.592 C25.172,5.645 19.539,0.12 12.592,0.12 ZM15.211,19.509 C14.564,19.764 14.48,19.958 13.661,20.93 C13.276,20.227 12.827,20.294 12.317,20.294 C11.533,20.294 10.923,20.101 10.488,19.720 C10.54,19.338 9.838,18.853 9.838,18.264 C9.838,18.35 9.854,17.800 9.886,17.562 C9.919,17.324 9.971,17.56 10.42,16.754 L10.853,13.892 C10.924,13.615 10.986,13.354 11.35,13.111 C11.84,12.866 11.107,12.642 11.107,12.437 C11.107,12.73 11.32,11.818 10.881,11.674 C10.729,11.530 10.443,11.460 10.16,11.460 C9.807,11.460 9.592,11.490 9.371,11.556 C9.153,11.623 8.963,11.683 8.808,11.743 L9.22,10.861 C9.552,10.645 10.60,10.460 10.545,10.306 C11.30,10.151 11.487,10.74 11.919,10.74 C12.697,10.74 13.298,10.264 13.721,10.639 C14.142,11.15 14.354,11.503 14.354,12.104 C14.354,12.229 14.339,12.448 14.310,12.761 C14.281,13.75 14.227,13.362 14.148,13.626 L13.342,16.480 C13.276,16.709 13.217,16.970 13.164,17.263 C13.111,17.556 13.86,17.780 13.86,17.931 C13.86,18.309 13.170,18.568 13.341,18.706 C13.509,18.843 13.805,18.913 14.221,18.913 C14.418,18.913 14.639,18.878 14.888,18.808 C15.136,18.740 15.315,18.679 15.427,18.627 L15.211,19.509 ZM15.68,7.924 C14.693,8.273 14.239,8.448 13.710,8.448 C13.183,8.448 12.726,8.273 12.347,7.924 C11.970,7.575 11.779,7.150 11.779,6.653 C11.779,6.158 11.971,5.732 12.347,5.380 C12.726,5.26 13.183,4.850 13.710,4.850 C14.239,4.850 14.693,5.26 15.68,5.380 C15.444,5.732 15.633,6.158 15.633,6.653 C15.633,7.151 15.444,7.575 15.68,7.924 Z"
+              />
+            </svg>
+          </a>
+        </span>
+        <span>
+          <a href="https://twitter.com/s_lempens" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="28px"
+              height="27px"
+            >
+              <path
+                fill-rule="evenodd"
+                fill="rgb(255, 255, 255)"
+                d="M14.17,0.155 C6.696,0.155 0.759,6.91 0.759,13.412 C0.759,20.734 6.696,26.670 14.17,26.670 C21.338,26.670 27.275,20.734 27.275,13.412 C27.275,6.91 21.338,0.155 14.17,0.155 L14.17,0.155 ZM20.71,10.492 C20.76,10.622 20.79,10.753 20.79,10.885 C20.79,14.906 17.18,19.543 11.421,19.543 L11.421,19.543 L11.421,19.543 C9.702,19.543 8.103,19.39 6.757,18.176 C6.995,18.204 7.237,18.218 7.482,18.218 C8.908,18.218 10.220,17.732 11.262,16.916 C9.930,16.891 8.807,16.11 8.419,14.802 C8.605,14.838 8.795,14.857 8.991,14.857 C9.269,14.857 9.538,14.820 9.793,14.750 C8.401,14.471 7.352,13.241 7.352,11.767 C7.352,11.753 7.352,11.741 7.352,11.728 C7.763,11.956 8.232,12.93 8.731,12.109 C7.914,11.563 7.377,10.631 7.377,9.576 C7.377,9.18 7.527,8.496 7.789,8.46 C9.289,9.887 11.532,11.98 14.61,11.226 C14.9,11.3 13.982,10.770 13.982,10.532 C13.982,8.852 15.345,7.489 17.26,7.489 C17.901,7.489 18.691,7.859 19.247,8.450 C19.940,8.314 20.591,8.60 21.179,7.712 C20.952,8.422 20.469,9.18 19.841,9.395 C20.457,9.321 21.43,9.158 21.588,8.916 C21.181,9.526 20.665,10.62 20.71,10.492 L20.71,10.492 Z"
+              />
+            </svg>
+          </a>
+        </span>
+      </legend>
+    </main>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
